@@ -110,7 +110,13 @@ function draw() {
     text(heroNames[k], 350, 435+k*30); 
     pop();
   }
-  }else{
+  }
+    else if(heroNames.length===0){
+            push();
+            textSize(25);
+            fill(50);
+            text('Mars', 350, 435); 
+    }else{
       for(let h=0; h<3; h++){
     push();
     textSize(25);
